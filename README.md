@@ -2,7 +2,7 @@
 Fetching data from cheapshark with vanilla Javascript
 
 ## Demo
-
+https://onderakbulut.github.io/cheapshark-api-fetch/index.html
 
 ## Features
 
@@ -12,8 +12,6 @@ Fetching data from cheapshark with vanilla Javascript
 - Wishlist
 - Gtag
 
-## Screenshot
-![](https://onderakbulut.github.io/cheapshark-api-fetch/screenshot.png)
-
 ## Video
-![](https://onderakbulut.github.io/cheapshark-api-fetch/fetch-api.mp4)
+https://user-images.githubusercontent.com/64356670/183260918-679d4c63-112b-41fe-a8b0-9ce6a9031e3f.mp4
+
