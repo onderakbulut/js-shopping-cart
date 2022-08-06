@@ -15,3 +15,5 @@ Fetching data from cheapshark with vanilla Javascript
 ## Screenshot
 ![](https://onderakbulut.github.io/cheapshark-api-fetch/screenshot.png)
 
+## Video
+![](https://onderakbulut.github.io/cheapshark-api-fetch/fetch-api.mp4)
