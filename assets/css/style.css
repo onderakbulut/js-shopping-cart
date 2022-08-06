@@ -1,0 +1,117 @@
+/* dm-serif-display-regular - latin */
+@font-face {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('../fonts/dm-serif-display-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/dm-serif-display-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/dm-serif-display-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/dm-serif-display-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/dm-serif-display-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/dm-serif-display-v10-latin-regular.svg#DMSerifDisplay') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v29-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v29-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v29-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v29-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v29-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v29-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-700 - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v29-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v29-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v29-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v29-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v29-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v29-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  
+
+  /* cart popup start */
+.cart-popup {
+    -webkit-transform: translate3d(104%, 0, 0);
+            transform: translate3d(104%, 0, 0);
+}
+
+.cart-popup.show {
+    -webkit-transform: none;
+    transform: none;
+}
+
+.cart-popup-footer {
+    opacity: 0;
+    -webkit-transform: translateY(45px);
+    transform: translateY(45px);
+}
+
+.cart-popup.show .cart-popup-footer {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: opacity .25s cubic-bezier(.25, .46, .45, .94) .45s, transform .25s cubic-bezier(.25, .46, .45, .94) .45s;
+    -webkit-transition: opacity .25s cubic-bezier(.25, .46, .45, .94) .45s, -webkit-transform .25s cubic-bezier(.25, .46, .45, .94) .45s;
+    transition: opacity .25s cubic-bezier(.25, .46, .45, .94) .45s, -webkit-transform .25s cubic-bezier(.25, .46, .45, .94) .45s;
+    transition: opacity .25s cubic-bezier(.25, .46, .45, .94) .45s, transform .25s cubic-bezier(.25, .46, .45, .94) .45s;
+    transition: opacity .25s cubic-bezier(.25, .46, .45, .94) .45s, transform .25s cubic-bezier(.25, .46, .45, .94) .45s, -webkit-transform .25s cubic-bezier(.25, .46, .45, .94) .45s
+}
+
+
+.quantity input[type=number]::-webkit-outer-spin-button,
+.quantity input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    display: block
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 3px
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, .15)
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .25)
+}
+.cart-popup-item  > img {
+    display: block;
+}
+/* cart popup end */
+
+/* fav start */
+.modal-backdrop {
+    opacity: 0;
+    visibility: hidden;
+}
+.modal-backdrop.show {
+    opacity: .5;
+    visibility: visible;
+}
+.modal {
+    display: none;
+}
+.modal.show {
+    display: block;
+}
+.fav.active .icon-heart-outlined:before {
+    content:"\e901";
+    color:#F8593B;
+}
