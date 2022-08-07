@@ -294,17 +294,6 @@ var shoppingCart = (function () {
 
     // List cart
     obj.listCart = function () {
-       /*  var cartCopy = [];
-        for (i in cart) {
-            item = cart[i];
-            itemCopy = {};
-            for (p in item) {
-                itemCopy[p] = item[p];
-
-            }
-            itemCopy.total = Number(item.price * item.count).toFixed(2);
-            cartCopy.push(itemCopy)
-        } */
         return cart;
     }
 
