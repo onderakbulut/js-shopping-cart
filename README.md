@@ -1,5 +1,5 @@
 # cheapshark-api-fetch
-Fetching data from cheapshark with vanilla Javascript
+Fetching data from cheapshark
 
 ## Demo
 https://onderakbulut.github.io/cheapshark-api-fetch/index.html
