@@ -147,7 +147,7 @@ $('.show-cart').on("click", ".plus", function (event) {
 })
 
 // Item count input
-$('.show-cart').on("change", ".item-count", function (event) {
+$('.show-cart').on("change", ".qty", function (event) {
     var name = $(this).data('name');
     var count = Number($(this).val());
     shoppingCart.setCountForItem(name, count);
@@ -388,7 +388,7 @@ var fav = (function(){
     return obj;
 })();
 
-$("html").delegate(".fav", "click", function (event) {
+$("html").on("click", ".fav" , function (event) {
     
     event.preventDefault();
     var name = $(this).parents(".card-content").find(".add-to-cart").data('name');
@@ -409,7 +409,7 @@ $("html").delegate(".fav", "click", function (event) {
     displayWishlist();
 });
 
-$("html").delegate(".delete-from-whislist", "click", function (event) {
+$("html").on("click", ".delete-from-whislist" , function (event) {
     event.preventDefault();
     var internalName = $(this).data('internal');
     var storeID = $(this).data('storeid');
@@ -500,7 +500,7 @@ dataLayer.push({
 })
 
 // product click
-$("html").delegate(".card", "click", function (event) {
+$("html").on("click" , ".card", function (event) {
 
     var name = $(this).find('.add-to-cart').data('name');
     var price = $(this).find('.add-to-cart').data('price');
@@ -520,7 +520,7 @@ $("html").delegate(".card", "click", function (event) {
 });
 
 // add to cart
-$("html").delegate(".add-to-cart", "click", function (event) {
+$("html").on("click", ".add-to-cart" , function (event) {
 
     var name = $(this).data('name');
     var price = $(this).data('price');
