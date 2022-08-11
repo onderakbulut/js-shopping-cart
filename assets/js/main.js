@@ -90,7 +90,7 @@ closeCart = function () {
     $(".cart-popup").removeClass("show");
 }
 
-$("html").delegate(".add-to-cart", "click", function (event) {
+$("html").on("click", ".add-to-cart" , function (event) {
     event.preventDefault();
     var name = $(this).data('name');
     var price = Number($(this).data('price'));
