@@ -2,7 +2,7 @@
 Fetching data from cheapshark
 
 ## Demo
-https://onderakbulut.github.io/cheapshark-api-fetch/index.html
+[https://onderakbulut.github.io/cheapshark-api-fetch/index.html](https://onderakbulut.github.io/js-shopping-cart/index.html)
 
 ## Features
 
